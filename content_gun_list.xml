@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/fortnitebg"
+    tools:context=".GunList"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/scarImage"
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/scarimage"
+         />
+
+    <TextView
+        android:id="@+id/gunName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:text="Gold Scar"
+        android:textSize = "25sp"
+        />
+
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:magic_button_size="50dp"
+        app:button_icon="@drawable/stats"
+        app:button_icon_width="25dp"
+        app:button_icon_height="25dp"
+        app:hide_text="Stats"
+        app:hide_text_size="5dp"
+        app:hide_text_color="@android:color/white"
+        app:icon_button_color="#4f525b"
+        app:expandable_area_color="#525252"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="225dp"
+        />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+</android.support.design.widget.CoordinatorLayout>
